@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Vanesa Lozano</div>
+        <div class="logo">Vanesa Gutierrez</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+<!--Menu hamburguesa-->
     <nav id="hamburger-nav">
         <div class="logo">Vanesa Lozano</div>
         <div class="hamburger-menu">
@@ -31,77 +32,88 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+<!--Seccion del perfil-->
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./assets/WhatsApp Image 2023-11-17 at 9.02.45 PM.jpeg" alt="Vanesa Lozano profile picture">
+            <img src="./assets/WhatsApp Image 2023-11-17 at 9.02.45 PM.jpeg" alt="Vanesa Lozano profile picture" />
         </div>
         <div class="section_text">
-            <p class="section_text_p1">Hello, I'm </p>
-            <h1 class="title">Vanesa Lozano</h1><br>
-            <p class="section_text_p1">Technologist in software analysis and development</p><br>
-            <div class="btn-container"><br>
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Vanesa Lozano</h1>
+            <p class="section_text_p2">Technologist in software analysis and development</p>
+            <div class="btn-container">
                 <button
                     class="btn btn-color-2"
                     onclick="window.open('./assets/resume-example.pdf')"
                 >
-                    Download
+                    Download CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contac Info
+                <button class="btn btn-color-1" onclick="location.href='#Contact'">
+                    Contact Info
                 </button>
             </div>
             <div id="socials-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="My LinkedIn profile"
-                class="icon"
-                onclick="location.href='https://linkedin.com/'"
+                <img
+                    src="assets/linkedin.png" 
+                    alt="My Linkedin profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/feed/'"
                 />
-                <img 
-                src="./assets/github.png"
-                alt="My Github profile"
-                class="icon"
-                onclick="location.href='https://github.com/vanesa675'"
+                <img
+                    src="assets/github.png" 
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/vanesa675'"
                 />
             </div>
         </div>
     </section>
-    <section id="about">
-        <p class="section_text_p1">Get To Know More</p><br><br>
-        <h1 class="tittle">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img 
-                    src="./assets/WhatsApp Image 2023-11-24 at 8.55.56 PM.jpeg" 
-                    alt="Profile Picture"
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="obout-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <h2>Experience</h2>
-                        <p>January 20, 2023 - August 23, 2023<br />Customer Support</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                        src="./assets/education.png" 
-                        alt="Education icon"
-                        class="icon"
-                        />
-                        <h2>Education</h2>
-                        <p>Technologist in software analysis and development<br/>English course (80 horas)</p>
-                    </div>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section_pic-container">
+                    <img
+                        src="./assets/WhatsApp Image 2023-11-24 at 8.55.56 PM.jpeg" 
+                        alt="Profile picture"
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <img
+                                src="assets/experience.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <h3>Experience</h3><hr>
+                            <p>
+                                January 20, 2023 - August 23, 2023<br />Customer Support 
+                                2020-2023
+                            </p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                                src="assets/education.png" 
+                                alt="Education icon"
+                                class="icon"
+                            />
+                            <h3>Education</h3><hr>
+                            <p>
+                                <h4>Technologist in Software Analysis and Development</h4><br>
+                                 Servicio nacional de aprendizaje - SENA<br>
+                                In progress<br><br>
+                                <h4>Academic Bachelor</h4><br>
+                                Educational institution Barrios Unidos<br>
+                                2022<br>
+                            </p>       
+                        </div>
                     </div>
                     <div class="text-container">
                         <p>
@@ -113,270 +125,201 @@
                             Capacity for teamwork, assertive communication and problem solving. 
                         </p>
                     </div>
-            </div>
-        </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-        />
-    </section>
-    <section id="experience">
-        <p class="section_text_p1"></p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <h2 class="experience-sub-title"></h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Fronted Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
                 </div>
             </div>
-        </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        />
-    </section>
-    <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-container">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-1.png" 
-                        alt="Project 1"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/vanesa675'"
-                        >
-                        Github
-                        </button>
-                        <button 
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/vanesa675'"
-                        >
-                        Live Demo
-                    </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-2.png" 
-                        alt="Project 2"
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/vanesa675'"
-                        >
-                        Github
-                        </button>
-                        <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/vanesa675'"
-                        >
-                        Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-3.png" 
-                        alt="Project 3"
-                        class="project-img"
-                        />
-                    </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/vanesa675'"
-                    >
-                    Github
-                </button>
-                <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/vanesa675'"
-                >
-                    Live Demo
-                </button>
-                </div>
-            </div>
-        </div>
-    </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="Arrow"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        />
-    </section>
-    <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
             <img
-              src="/assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
+                src="assets/arrow.png" 
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='#experience'"
             />
-            <p><a href="lgutierrezlozano09@gmail.com">lgutierrezlozano09@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
+        </section>
+        <section id="experience">
+            <p class="section_text_p1">Explore My</p>
+            <h1 class="title">Habilidades</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Technologist in software analysis and development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="assets/checkmark.png" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                /> 
+                                <div>
+                                    <h3>HTML</h3> 
+                                    <p>basic</p> 
+                                </div> 
+                            </article>
+                            <article>
+                                <img
+                                    src="assets/checkmark.png" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>CSS</h3> 
+                                    <p>basic</p> 
+                                </div> 
+                            </article>
+                            <article>
+                                <img
+                                    src="assets/checkmark.png" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>JavaScript</h3> 
+                                    <p>Basic</p> 
+                                </div> 
+                            </article>
+                            <article>
+                                <img
+                                    src="assets/checkmark.png" 
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>excel</h3> 
+                                    <p>Basic</p> 
+                                </div> 
+                            </article>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <img
-              src="/assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
+                src="assets/arrow.png" 
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='#Projects'"
             />
-            <p><a href='https://www.linkedin.com/in/laura-gutierrez-601511275/'>LinkedIn</a></p>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>&copy; 2023 Vanesa Lozano. All Rights Reserved.</p>
-      </footer>
-      <script src="script.js"></script>
-    </body>
+       </section>
+       <section id="Projects">
+            <p class="section_text_p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-containers">
+                        <div class="article-containers">
+                            <img
+                                src="assets/project-1.png" 
+                                alt="project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">project One</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/vanesa675'"
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/vanesa675'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="assets/project-2.png" 
+                                alt="project 2"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Two</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/vanesa675'"
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/vanesa675'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="assets/project-3.png" 
+                                alt="project 3"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Three</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/vanesa675'"
+                            >
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/vanesa675'"
+                            >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="assets/arrow.png" 
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='#Contact'"
+            />
+       </section>
+       <section id="Contact">
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-containers"> <br>
+                <div class="contact-info-containers">
+                    <img
+                        src="assets/email.png" 
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p><a href="lgutierrezlozano09@gmail.com">lgutierrezlozano09@gmail.com</a></p>
+                </div> <br>
+                <div class="Contact-info-container">
+                    <img
+                        src="assets/linkedin.png" 
+                        alt="Linkedin icon"
+                        class="icon contact-icon linkedin-icon"
+                    /> <br>
+                    <p><a href="https://www.linkedin.com/feed/">Linkendin</a></p>
+                </div>
+            </div>
+       </section>
+       <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Vanesa Lozano. All Rights Reserved.</p>
+       </footer>
+       <script src="/js/script.js"></script>
+</body>
 </html>
