@@ -1,6 +1,6 @@
-/*General*/
+/* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,100&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,11 @@
 }
 
 body {
-    font-family: "poppins", sans-serif;
+    font-family: "works sans", sans-serif;
+    background: #424647; 
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    color: black;
 }
 
 html {
@@ -66,7 +70,7 @@ a:hover {
     cursor: default;
 }
 
-/* HAMBURGER MENU */
+/* HAMBURGUER MENU */
 
 #hamburger-nav {
     display: none;
@@ -122,31 +126,31 @@ a:hover {
     max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
+.hamburguer-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);   
 }
 
-.hamburger-icon.open span:nth-child(2) {
+.hamburguer-icon.open span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger-icon.open span:nth-child(2) {
+.hamburguer-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
+.hamburguer-icon span:first-child {
     transform: none;
 }
 
-.hamburger-icon span:first-child {
+.hamburguer-icon span:first-child {
     opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.hamburguer-icon span:first-child {
     transform: none;
 }
 
-/* SECTIONS */
+/*SECTIONS*/
 
 section {
     padding-top: 4vh;
@@ -160,7 +164,7 @@ section {
     display: flex;
 }
 
-/* PROFILE SECTION */
+/*PROFILE SECTION*/
 
 #profile {
     display: flex;
@@ -169,27 +173,27 @@ section {
     height: 80vh;
 }
 
-.section_pic-container {
+.section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    margin: 0;
 }
 
-.section_text {
+.section__text {
     align-self: center;
     text-align: center;
 }
 
-.section_text p {
+.section__text p {
     font-weight: 600;
 }
 
-.section_text_p1 {
+.section__text__p1 {
     text-align: center;
 }
 
-.section_text_p2 {
+.section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -206,14 +210,14 @@ section {
     gap: 1rem;
 }
 
-/* ICONS */
+/*ICONS*/
 
 .icon {
     cursor: pointer;
     height: 2rem;
 }
 
-/* BUTTONS */
+/*BUTTONS*/
 
 .btn-container {
     display: flex;
@@ -254,14 +258,14 @@ section {
 }
 
 .btn-color-2:hover {
-    border: rgb(53, 19, 19) 0.1rem solid;
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
     gap: 1rem;
 }
 
-/*About section*/
+/* ABOUT SECTION */
 
 #about {
     position: relative;
@@ -278,21 +282,9 @@ section {
     flex-direction: column;
 }
 
-.about-container,
-.about-details-containers {
+.about-containers,
+.about-details-container {
     display: flex;
-}
-
-.text-container,
-.details-containers {
-    position: relative;
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 6rem;
-    border: rgb(160, 160, 160) 0.1rem solid;
-    border-color: rgb(255, 255, 255);
-    text-align: left;
 }
 
 .about-pic {
@@ -306,12 +298,12 @@ section {
 }
 
 .details-container {
-    padding: 2.5rem;
+    padding: 1.5rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(160, 160, 160) 0.1rem solid;
-    border-color: rgb(0, 0, 0);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
     text-align: center;
 }
 
@@ -320,13 +312,13 @@ section {
     height: 80%;
 }
 
-.section_pic-container {
+.section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
 
-/*Experience section*/
+/* EXPERIENCE SECTION*/
 
 #experience {
     position: relative;
@@ -361,13 +353,13 @@ article {
     gap: 0.5rem;
 }
 
-article.con {
+article .icon {
     cursor: default;
 }
 
-/*Projects section*/
+/*PROJECTS SECTION*/
 
-#projects {
+#Projects {
     position: relative;
 }
 
@@ -401,35 +393,35 @@ article.con {
     height: 70vh;
 }
 
-.contact-info-upper-containers {
-    display:inline-flexbox;
+.contact-info-upper-container {
+    display: flex;
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     background: (250, 250, 250);
-    margin: rem auto;
+    margin: 2rem auto;
     padding: 0.5rem;
 }
 
-.contact_info_container {
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    margin: 2rem;
+    gap: 0.5rem;
+    margin: 1rem;
 }
 
-.contact-info-container {
+.contact-info-container p {
     font-size: large;
 }
 
-.contact_icon {
+.contact-icon {
     cursor: default;
 }
 
 .email-icon {
-    left: 2.5rem;
+    height: 2.5rem;
 }
 
 /* FOOTER SECTTION */
@@ -442,7 +434,6 @@ footer {
 footer p {
     text-align: center;
 }
-
 
 
 

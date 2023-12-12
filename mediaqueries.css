@@ -7,12 +7,12 @@
         flex-wrap: wrap;
     }
     #contact,
-    #projects {
+    #Projects {
         height: fit-content;
     }
 }
 
-@media screen and (max-widht: 1200px) {
+@media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
