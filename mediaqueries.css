@@ -23,6 +23,10 @@
     .experience-details-container {
         margin-top: 2rem;
     }
+    #Projects,
+    .projects-details-container {
+        margin-top: 2rem;
+    }
     #profile,
     .section-container {
         display: block;

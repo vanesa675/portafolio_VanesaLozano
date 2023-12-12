@@ -9,10 +9,6 @@
 
 body {
     font-family: "works sans", sans-serif;
-    background: #424647; 
-    background: -webkit-linear-gradient(to right, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526);
-    color: black;
 }
 
 html {
